@@ -1,24 +1,26 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+installation steps
 
-Things you may want to cover:
+add the devise gem to the gemfile:
+  Gemfile- game 'devise'
 
-* Ruby version
+in the terminal
+  bundle
+  rails generate devise:install
 
-* System dependencies
+add root directory
+  config/routes.rb- root to: 'users#index'
 
-* Configuration
+add notices and alerts to the layout
+  (in the body tag above the yield)
+  <p class="notice"><%= notice %></p>
+  <p class="alert"><%= alert %></p>
 
-* Database creation
+in the terminal
+  rails g devise:views
+  rails generate devise USER
+  rails db:create
+  rails db:migrate
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+fist pump aggressively
