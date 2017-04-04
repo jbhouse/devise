@@ -14,8 +14,7 @@ add root directory
 
 add notices and alerts to the layout
   (in the body tag above the yield)
-  "<p class="notice"><%= notice %></p>"
-  "<p class="alert"><%= alert %></p>"
+  (check this layout page for an example) 
 
 in the terminal
   rails g devise:views
